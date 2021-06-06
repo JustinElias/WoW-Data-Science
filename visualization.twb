@@ -1,0 +1,3306 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='First-Half+ (organized-data)' inline='true' name='federated.095ktrb1va747n11yi2xl10opgob' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='organized-data' name='excel-direct.0cprkn419vgspf0zo873p0sp1c3h'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jelia/OneDrive/Desktop/git/WoW-Data-Science/data/organized-data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0cprkn419vgspf0zo873p0sp1c3h' name='First-Half' table='[&apos;First-Half$&apos;]' type='table'>
+          <columns gridOrigin='A1:J737:no:A1:J737:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='integer' name='Timestamp' ordinal='1' />
+            <column datatype='integer' name='Map' ordinal='2' />
+            <column datatype='string' name='TeamComposition' ordinal='3' />
+            <column datatype='string' name='EnemyComposition' ordinal='4' />
+            <column datatype='integer' name='Duration' ordinal='5' />
+            <column datatype='boolean' name='Victory' ordinal='6' />
+            <column datatype='integer' name='RatingChange' ordinal='7' />
+            <column datatype='integer' name='MMR' ordinal='8' />
+            <column datatype='integer' name='EnemyMMR' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0cprkn419vgspf0zo873p0sp1c3h' name='First-Half' table='[&apos;First-Half$&apos;]' type='table'>
+            <columns gridOrigin='A1:J737:no:A1:J737:0' header='yes' outcome='2'>
+              <column datatype='integer' name='Index' ordinal='0' />
+              <column datatype='integer' name='Timestamp' ordinal='1' />
+              <column datatype='integer' name='Map' ordinal='2' />
+              <column datatype='string' name='TeamComposition' ordinal='3' />
+              <column datatype='string' name='EnemyComposition' ordinal='4' />
+              <column datatype='integer' name='Duration' ordinal='5' />
+              <column datatype='boolean' name='Victory' ordinal='6' />
+              <column datatype='integer' name='RatingChange' ordinal='7' />
+              <column datatype='integer' name='MMR' ordinal='8' />
+              <column datatype='integer' name='EnemyMMR' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0cprkn419vgspf0zo873p0sp1c3h' name='Second-half' table='[&apos;Second-half$&apos;]' type='table'>
+            <columns gridOrigin='A1:J736:no:A1:J736:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Index' ordinal='0' />
+              <column datatype='integer' name='Timestamp' ordinal='1' />
+              <column datatype='integer' name='Map' ordinal='2' />
+              <column datatype='string' name='TeamComposition' ordinal='3' />
+              <column datatype='string' name='EnemyComposition' ordinal='4' />
+              <column datatype='integer' name='Duration' ordinal='5' />
+              <column datatype='boolean' name='Victory' ordinal='6' />
+              <column datatype='integer' name='RatingChange' ordinal='7' />
+              <column datatype='integer' name='MMR' ordinal='8' />
+              <column datatype='integer' name='EnemyMMR' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Duration (Second-half)]' value='[Second-half].[Duration]' />
+          <map key='[Duration]' value='[First-Half].[Duration]' />
+          <map key='[EnemyComposition (Second-half)]' value='[Second-half].[EnemyComposition]' />
+          <map key='[EnemyComposition]' value='[First-Half].[EnemyComposition]' />
+          <map key='[EnemyMMR (Second-half)]' value='[Second-half].[EnemyMMR]' />
+          <map key='[EnemyMMR]' value='[First-Half].[EnemyMMR]' />
+          <map key='[Index (Second-half)]' value='[Second-half].[Index]' />
+          <map key='[Index]' value='[First-Half].[Index]' />
+          <map key='[MMR (Second-half)]' value='[Second-half].[MMR]' />
+          <map key='[MMR]' value='[First-Half].[MMR]' />
+          <map key='[Map (Second-half)]' value='[Second-half].[Map]' />
+          <map key='[Map]' value='[First-Half].[Map]' />
+          <map key='[RatingChange (Second-half)]' value='[Second-half].[RatingChange]' />
+          <map key='[RatingChange]' value='[First-Half].[RatingChange]' />
+          <map key='[TeamComposition (Second-half)]' value='[Second-half].[TeamComposition]' />
+          <map key='[TeamComposition]' value='[First-Half].[TeamComposition]' />
+          <map key='[Timestamp (Second-half)]' value='[Second-half].[Timestamp]' />
+          <map key='[Timestamp]' value='[First-Half].[Timestamp]' />
+          <map key='[Victory (Second-half)]' value='[Second-half].[Victory]' />
+          <map key='[Victory]' value='[First-Half].[Victory]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Map</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Map]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>Map</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeamComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TeamComposition]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>TeamComposition</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EnemyComposition]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>EnemyComposition</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victory</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Victory]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>Victory</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatingChange</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RatingChange]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>RatingChange</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MMR]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>MMR</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyMMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnemyMMR]</local-name>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias>EnemyMMR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[First-Half]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J737:no:A1:J737:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Timestamp (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Map</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Map (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>Map</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeamComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TeamComposition (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>TeamComposition</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EnemyComposition (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>EnemyComposition</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victory</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Victory (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>Victory</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatingChange</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RatingChange (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>RatingChange</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MMR (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>MMR</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyMMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnemyMMR (Second-half)]</local-name>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias>EnemyMMR</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Second-half]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J736:no:A1:J736:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Enemy Composition' datatype='string' name='[EnemyComposition]' role='dimension' type='nominal' />
+      <column caption='Enemy MMR' datatype='integer' name='[EnemyMMR]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Index (Second-half)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[MMR]' role='measure' type='quantitative' />
+      <column caption='Rating Change' datatype='integer' name='[RatingChange]' role='measure' type='quantitative' />
+      <column caption='Team Composition' datatype='string' name='[TeamComposition]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='First-Half' datatype='table' name='[__tableau_internal_object_id__].[First-Half_9E5FD913E1824032B8751D226BBBB46D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Second-half' datatype='table' name='[__tableau_internal_object_id__].[Second-half_8BE8953F9090440FA142CEE06739E866]' role='measure' type='quantitative' />
+      <column-instance column='[Index (Second-half)]' derivation='None' name='[none:Index (Second-half):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MMR]' derivation='None' name='[none:MMR:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Index (Second-half),MMR)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Index (Second-half):qk]' />
+          <groupfilter function='level-members' level='[none:MMR:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='First-Half' id='First-Half_9E5FD913E1824032B8751D226BBBB46D'>
+            <properties context=''>
+              <relation connection='excel-direct.0cprkn419vgspf0zo873p0sp1c3h' name='First-Half' table='[&apos;First-Half$&apos;]' type='table'>
+                <columns gridOrigin='A1:J737:no:A1:J737:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Index' ordinal='0' />
+                  <column datatype='integer' name='Timestamp' ordinal='1' />
+                  <column datatype='integer' name='Map' ordinal='2' />
+                  <column datatype='string' name='TeamComposition' ordinal='3' />
+                  <column datatype='string' name='EnemyComposition' ordinal='4' />
+                  <column datatype='integer' name='Duration' ordinal='5' />
+                  <column datatype='boolean' name='Victory' ordinal='6' />
+                  <column datatype='integer' name='RatingChange' ordinal='7' />
+                  <column datatype='integer' name='MMR' ordinal='8' />
+                  <column datatype='integer' name='EnemyMMR' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Second-half' id='Second-half_8BE8953F9090440FA142CEE06739E866'>
+            <properties context=''>
+              <relation connection='excel-direct.0cprkn419vgspf0zo873p0sp1c3h' name='Second-half' table='[&apos;Second-half$&apos;]' type='table'>
+                <columns gridOrigin='A1:J736:no:A1:J736:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Index' ordinal='0' />
+                  <column datatype='integer' name='Timestamp' ordinal='1' />
+                  <column datatype='integer' name='Map' ordinal='2' />
+                  <column datatype='string' name='TeamComposition' ordinal='3' />
+                  <column datatype='string' name='EnemyComposition' ordinal='4' />
+                  <column datatype='integer' name='Duration' ordinal='5' />
+                  <column datatype='boolean' name='Victory' ordinal='6' />
+                  <column datatype='integer' name='RatingChange' ordinal='7' />
+                  <column datatype='integer' name='MMR' ordinal='8' />
+                  <column datatype='integer' name='EnemyMMR' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Victory]' />
+              <expression op='[Victory (Second-half)]' />
+            </expression>
+            <first-end-point object-id='First-Half_9E5FD913E1824032B8751D226BBBB46D' />
+            <second-end-point object-id='Second-half_8BE8953F9090440FA142CEE06739E866' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='season1-games-analysis (organized-data)' inline='true' name='federated.1rx940o0qbf2x51fntzw8198ydeu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='organized-data' name='excel-direct.00v2yec1vlbf3719k41sy064ep08'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jelia/OneDrive/Desktop/git/WoW-Data-Science/data/organized-data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.00v2yec1vlbf3719k41sy064ep08' name='season1-games-analysis' table='[&apos;season1-games-analysis$&apos;]' type='table'>
+          <columns gridOrigin='A1:K1472:no:A1:K1472:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='integer' name='Timestamp' ordinal='1' />
+            <column datatype='integer' name='Map' ordinal='2' />
+            <column datatype='string' name='TeamComposition' ordinal='3' />
+            <column datatype='string' name='EnemyComposition' ordinal='4' />
+            <column datatype='integer' name='Duration' ordinal='5' />
+            <column datatype='datetime' name='Duration in Minutes' ordinal='6' />
+            <column datatype='boolean' name='Victory' ordinal='7' />
+            <column datatype='integer' name='RatingChange' ordinal='8' />
+            <column datatype='integer' name='MMR' ordinal='9' />
+            <column datatype='integer' name='EnemyMMR' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.00v2yec1vlbf3719k41sy064ep08' name='season1-games-analysis' table='[&apos;season1-games-analysis$&apos;]' type='table'>
+          <columns gridOrigin='A1:K1472:no:A1:K1472:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Index' ordinal='0' />
+            <column datatype='integer' name='Timestamp' ordinal='1' />
+            <column datatype='integer' name='Map' ordinal='2' />
+            <column datatype='string' name='TeamComposition' ordinal='3' />
+            <column datatype='string' name='EnemyComposition' ordinal='4' />
+            <column datatype='integer' name='Duration' ordinal='5' />
+            <column datatype='datetime' name='Duration in Minutes' ordinal='6' />
+            <column datatype='boolean' name='Victory' ordinal='7' />
+            <column datatype='integer' name='RatingChange' ordinal='8' />
+            <column datatype='integer' name='MMR' ordinal='9' />
+            <column datatype='integer' name='EnemyMMR' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K1472:no:A1:K1472:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Map</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Map]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>Map</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeamComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TeamComposition]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>TeamComposition</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EnemyComposition]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>EnemyComposition</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration in Minutes</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Duration in Minutes]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>Duration in Minutes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victory</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Victory]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>Victory</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatingChange</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RatingChange]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>RatingChange</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MMR]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>MMR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyMMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnemyMMR]</local-name>
+            <parent-name>[season1-games-analysis]</parent-name>
+            <remote-alias>EnemyMMR</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Markers' datatype='integer' name='[Calculation_919860274652442625]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='size()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='datetime' name='[Duration in Minutes]' role='dimension' type='ordinal' />
+      <column caption='Enemy Composition' datatype='string' name='[EnemyComposition]' role='dimension' type='nominal' />
+      <column caption='Enemy MMR' datatype='integer' name='[EnemyMMR]' role='measure' type='quantitative' />
+      <column caption='Rating Change' datatype='integer' name='[RatingChange]' role='measure' type='quantitative' />
+      <column caption='Team Composition' datatype='string' name='[TeamComposition]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='season1-games-analysis' datatype='table' name='[__tableau_internal_object_id__].[season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE]' role='measure' type='quantitative' />
+      <column-instance column='[Duration in Minutes]' derivation='Attribute' name='[attr:Duration in Minutes:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Duration in Minutes]' derivation='Minute' name='[mi:Duration in Minutes:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[mi:Duration in Minutes:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1899</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Duration in Minutes:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:00:22#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:00:42#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:01:02#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:01:22#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:01:42#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:02:02#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:02:22#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:02:42#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:03:02#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:03:23#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:03:44#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:04:06#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:04:27#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:04:50#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:05:11#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:05:32#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:05:55#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:06:19#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:06:44#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:07:07#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:07:34#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:08:04#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:08:48#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:09:31#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:10:08#</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>#00:11:29#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1899</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:00:34#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:00:54#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:01:14#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:01:34#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:01:54#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:02:14#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:02:34#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:02:54#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:03:15#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:03:35#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:03:57#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:04:19#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:04:41#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:05:02#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:05:24#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:05:45#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:06:09#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:06:35#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:06:59#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:07:23#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:07:52#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:08:36#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:09:15#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:09:52#</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>#00:10:37#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:00:18#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:00:38#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:00:58#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:01:18#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:01:38#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:01:58#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:02:18#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:02:38#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:02:58#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:03:19#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:03:40#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:04:01#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:04:23#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:04:45#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:05:06#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:05:28#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:05:50#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:06:13#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:06:39#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:07:03#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:07:30#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:07:59#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:08:40#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:09:24#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:10:02#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#00:11:11#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:00:26#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:00:46#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:01:06#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:01:26#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:01:46#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:02:06#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:02:26#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:02:46#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:03:06#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:03:27#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:03:48#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:04:10#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:04:32#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:04:54#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:05:16#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:05:37#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:05:59#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:06:24#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:06:48#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:07:13#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:07:39#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:08:19#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:08:54#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:09:38#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:10:16#</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>#00:12:26#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:00:23#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:00:43#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:01:03#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:01:23#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:01:43#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:02:03#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:02:23#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:02:43#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:03:03#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:03:24#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:03:45#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:04:07#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:04:28#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:04:51#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:05:12#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:05:34#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:05:56#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:06:21#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:06:45#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:07:09#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:07:35#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:08:10#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:08:49#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:09:32#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:10:09#</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>#00:11:57#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:00:19#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:00:39#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:00:59#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:01:19#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:01:39#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:01:59#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:02:19#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:02:39#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:02:59#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:03:20#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:03:41#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:04:02#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:04:24#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:04:46#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:05:07#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:05:29#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:05:51#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:06:14#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:06:40#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:07:04#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:07:31#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:08:00#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:08:41#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:09:26#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:10:03#</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>#00:11:14#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:00:16#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:00:32#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:00:52#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:01:12#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:01:32#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:01:52#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:02:12#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:02:32#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:02:52#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:03:12#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:03:33#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:03:55#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:04:17#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:04:38#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:05:00#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:05:22#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:05:43#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:06:05#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:06:32#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:06:57#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:07:21#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:07:49#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:08:32#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:09:11#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:09:49#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:10:33#</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>#00:13:54#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:00:35#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:00:55#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:01:15#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:01:35#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:01:55#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:02:15#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:02:35#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:02:55#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:03:16#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:03:37#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:03:58#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:04:20#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:04:42#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:05:03#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:05:25#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:05:46#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:06:10#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:06:36#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:07:00#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:07:24#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:07:53#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:08:37#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:09:18#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:09:53#</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>#00:10:39#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:00:13#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:00:30#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:00:50#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:01:10#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:01:30#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:01:50#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:02:10#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:02:30#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:02:50#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:03:10#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:03:31#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:03:53#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:04:15#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:04:36#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:04:58#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:05:20#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:05:41#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:06:03#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:06:30#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:06:55#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:07:18#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:07:47#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:08:26#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:09:07#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:09:47#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:10:26#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#00:13:14#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:00:20#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:00:40#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:01:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:01:20#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:01:40#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:02:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:02:20#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:02:40#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:03:00#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:03:21#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:03:42#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:04:04#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:04:25#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:04:48#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:05:08#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:05:30#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:05:53#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:06:16#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:06:41#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:07:05#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:07:32#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:08:02#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:08:43#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:09:28#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:10:04#</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>#00:11:22#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:00:27#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:00:47#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:01:07#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:01:27#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:01:47#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:02:07#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:02:27#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:02:47#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:03:07#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:03:28#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:03:49#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:04:11#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:04:33#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:04:55#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:05:17#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:05:38#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:06:00#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:06:25#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:06:51#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:07:14#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:07:40#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:08:20#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:08:55#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:09:40#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:10:17#</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>#00:12:33#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:00:28#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:00:48#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:01:08#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:01:28#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:01:48#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:02:08#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:02:28#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:02:48#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:03:08#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:03:29#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:03:51#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:04:12#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:04:34#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:04:56#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:05:18#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:05:39#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:06:01#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:06:26#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:06:52#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:07:16#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:07:43#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:08:21#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:09:03#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:09:41#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:10:18#</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>#00:12:49#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:00:15#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:00:31#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:00:51#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:01:11#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:01:31#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:01:51#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:02:11#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:02:31#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:02:51#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:03:11#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:03:32#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:03:54#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:04:16#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:04:37#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:04:59#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:05:21#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:05:42#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:06:04#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:06:31#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:06:56#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:07:20#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:07:48#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:08:29#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:09:10#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:09:48#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:10:28#</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>#00:13:44#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:00:17#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:00:33#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:00:53#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:01:13#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:01:33#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:01:53#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:02:13#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:02:33#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:02:53#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:03:13#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:03:34#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:03:56#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:04:18#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:04:39#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:05:01#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:05:23#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:05:44#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:06:08#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:06:34#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:06:58#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:07:22#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:07:51#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:08:33#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:09:13#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:09:51#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:10:34#</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>#00:14:05#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:00:24#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:00:44#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:01:04#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:01:24#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:01:44#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:02:04#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:02:24#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:02:44#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:03:04#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:03:25#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:03:46#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:04:08#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:04:30#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:04:52#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:05:13#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:05:35#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:05:57#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:06:22#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:06:46#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:07:10#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:07:36#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:08:12#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:08:50#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:09:33#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:10:14#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#00:12:01#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:00:21#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:00:41#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:01:01#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:01:21#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:01:41#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:02:01#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:02:21#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:02:41#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:03:01#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:03:22#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:03:43#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:04:05#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:04:26#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:04:49#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:05:10#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:05:31#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:05:54#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:06:17#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:06:43#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:07:06#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:07:33#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:08:03#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:08:47#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:09:30#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:10:07#</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>#00:11:27#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:00:36#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:00:56#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:01:16#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:01:36#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:01:56#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:02:16#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:02:36#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:02:56#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:03:17#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:03:38#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:03:59#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:04:21#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:04:43#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:05:04#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:05:26#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:05:47#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:06:11#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:06:37#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:07:01#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:07:26#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:07:54#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:08:38#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:09:22#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:09:56#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#00:10:48#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:00:29#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:00:49#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:01:09#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:01:29#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:01:49#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:02:09#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:02:29#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:02:49#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:03:09#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:03:30#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:03:52#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:04:14#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:04:35#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:04:57#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:05:19#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:05:40#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:06:02#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:06:27#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:06:54#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:07:17#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:07:46#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:08:24#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:09:05#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:09:43#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:10:19#</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>#00:13:07#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:00:25#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:00:45#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:01:05#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:01:25#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:01:45#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:02:05#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:02:25#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:02:45#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:03:05#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:03:26#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:03:47#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:04:09#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:04:31#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:04:53#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:05:15#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:05:36#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:05:58#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:06:23#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:06:47#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:07:11#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:07:37#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:08:18#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:08:51#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:09:35#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:10:15#</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>#00:12:16#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:00:37#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:00:57#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:01:17#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:01:37#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:01:57#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:02:17#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:02:37#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:02:57#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:03:18#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:03:39#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:04:00#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:04:22#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:04:44#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:05:05#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:05:27#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:05:49#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:06:12#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:06:38#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:07:02#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:07:27#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:07:57#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:08:39#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:09:23#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:09:58#</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>#00:10:50#</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='season1-games-analysis' id='season1-games-analysis_01D49B65F6114A3A8ADCF00013FEA6EE'>
+            <properties context=''>
+              <relation connection='excel-direct.00v2yec1vlbf3719k41sy064ep08' name='season1-games-analysis' table='[&apos;season1-games-analysis$&apos;]' type='table'>
+                <columns gridOrigin='A1:K1472:no:A1:K1472:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Index' ordinal='0' />
+                  <column datatype='integer' name='Timestamp' ordinal='1' />
+                  <column datatype='integer' name='Map' ordinal='2' />
+                  <column datatype='string' name='TeamComposition' ordinal='3' />
+                  <column datatype='string' name='EnemyComposition' ordinal='4' />
+                  <column datatype='integer' name='Duration' ordinal='5' />
+                  <column datatype='datetime' name='Duration in Minutes' ordinal='6' />
+                  <column datatype='boolean' name='Victory' ordinal='7' />
+                  <column datatype='integer' name='RatingChange' ordinal='8' />
+                  <column datatype='integer' name='MMR' ordinal='9' />
+                  <column datatype='integer' name='EnemyMMR' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='First-Half+ (organized-data)' name='federated.095ktrb1va747n11yi2xl10opgob' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095ktrb1va747n11yi2xl10opgob'>
+            <column datatype='integer' name='[Index (Second-half)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Index]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[MMR (Second-half)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[MMR]' role='measure' type='quantitative' />
+            <column-instance column='[Index (Second-half)]' derivation='None' name='[none:Index (Second-half):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Index]' derivation='None' name='[none:Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MMR (Second-half)]' derivation='None' name='[none:MMR (Second-half):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MMR]' derivation='None' name='[none:MMR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095ktrb1va747n11yi2xl10opgob].[Exclusions (Index (Second-half),MMR)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Index (Second-half):qk]' />
+                <groupfilter function='level-members' level='[none:MMR:qk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Index (Second-half):qk]' member='789' />
+                <groupfilter function='member' level='[none:MMR:qk]' member='2339' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.095ktrb1va747n11yi2xl10opgob].[Exclusions (Index (Second-half),MMR)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.095ktrb1va747n11yi2xl10opgob].[none:Index:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.095ktrb1va747n11yi2xl10opgob].[none:Index (Second-half):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.095ktrb1va747n11yi2xl10opgob].[none:MMR:qk] + [federated.095ktrb1va747n11yi2xl10opgob].[none:MMR (Second-half):qk])</rows>
+        <cols>([federated.095ktrb1va747n11yi2xl10opgob].[none:Index:qk] + [federated.095ktrb1va747n11yi2xl10opgob].[none:Index (Second-half):qk])</cols>
+      </table>
+      <simple-id uuid='{316E5E1A-3477-4E93-ACFB-644D745627E1}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>Data Connection Name</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='season1-games-analysis (organized-data)' name='federated.1rx940o0qbf2x51fntzw8198ydeu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rx940o0qbf2x51fntzw8198ydeu'>
+            <column caption='Markers' datatype='integer' name='[Calculation_919860274652442625]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='size()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Duration]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Index]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[MMR]' role='measure' type='quantitative' />
+            <column-instance column='[Duration]' derivation='None' name='[none:Duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Index]' derivation='None' name='[none:Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MMR]' derivation='None' name='[none:MMR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_919860274652442625]' derivation='User' name='[usr:Calculation_919860274652442625:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Index:qk]' scope='cols' value='Number of Games' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Duration:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Duration:qk]' />
+              <lod column='[federated.1rx940o0qbf2x51fntzw8198ydeu].[usr:Calculation_919860274652442625:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.88955801725387573' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:MMR:qk]</rows>
+        <cols>[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Index:qk]</cols>
+      </table>
+      <simple-id uuid='{E8934E92-ECBE-40BD-B36D-54F9FD45655B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.095ktrb1va747n11yi2xl10opgob].[none:MMR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A41288EE-6752-44B5-B8B5-DF7A81CF7597}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Duration:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rx940o0qbf2x51fntzw8198ydeu].[attr:Duration in Minutes:ok]</field>
+            <field>[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Duration:qk]</field>
+            <field>[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:Index:qk]</field>
+            <field>[federated.1rx940o0qbf2x51fntzw8198ydeu].[none:MMR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8C55250A-02DA-4A4A-885D-58AD3A38C256}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      fDYlYFauZrMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      J4DgTPP/gdgTR9CAcSYAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
