@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Updated Maps (updated-analysis)' inline='true' name='federated.0d7luup1tm2ip618p37c60hmgcca' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='updated-analysis' name='excel-direct.02mubxf16zk6j31f6w6071pihuht'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jelia/OneDrive/Desktop/git/WoW-Data-Science/updated-analysis.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.02mubxf16zk6j31f6w6071pihuht' name='Updated Maps' table='[&apos;Updated Maps$&apos;]' type='table'>
+          <columns gridOrigin='A1:K1472:no:A1:K1472:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Index' ordinal='1' />
+            <column datatype='integer' name='Timestamp' ordinal='2' />
+            <column datatype='string' name='Map' ordinal='3' />
+            <column datatype='string' name='EnemyComposition' ordinal='4' />
+            <column datatype='integer' name='Duration' ordinal='5' />
+            <column datatype='string' name='Duration in Minutes' ordinal='6' />
+            <column datatype='boolean' name='Victory' ordinal='7' />
+            <column datatype='integer' name='RatingChange' ordinal='8' />
+            <column datatype='integer' name='MMR' ordinal='9' />
+            <column datatype='integer' name='EnemyMMR' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.02mubxf16zk6j31f6w6071pihuht' name='Updated Maps' table='[&apos;Updated Maps$&apos;]' type='table'>
+          <columns gridOrigin='A1:K1472:no:A1:K1472:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Index' ordinal='1' />
+            <column datatype='integer' name='Timestamp' ordinal='2' />
+            <column datatype='string' name='Map' ordinal='3' />
+            <column datatype='string' name='EnemyComposition' ordinal='4' />
+            <column datatype='integer' name='Duration' ordinal='5' />
+            <column datatype='string' name='Duration in Minutes' ordinal='6' />
+            <column datatype='boolean' name='Victory' ordinal='7' />
+            <column datatype='integer' name='RatingChange' ordinal='8' />
+            <column datatype='integer' name='MMR' ordinal='9' />
+            <column datatype='integer' name='EnemyMMR' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K1472:no:A1:K1472:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Map</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Map]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>Map</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyComposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EnemyComposition]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>EnemyComposition</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration in Minutes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Duration in Minutes]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>Duration in Minutes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victory</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Victory]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>Victory</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatingChange</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RatingChange]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>RatingChange</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MMR]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>MMR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnemyMMR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnemyMMR]</local-name>
+            <parent-name>[Updated Maps]</parent-name>
+            <remote-alias>EnemyMMR</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Updated Maps_37AB8631CF4F41F1A15170589A513354]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Enemy Composition' datatype='string' name='[EnemyComposition]' role='dimension' type='nominal' />
+      <column caption='Enemy MMR' datatype='integer' name='[EnemyMMR]' role='measure' type='quantitative' />
+      <column caption='Rating Change' datatype='integer' name='[RatingChange]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Updated Maps' datatype='table' name='[__tableau_internal_object_id__].[Updated Maps_37AB8631CF4F41F1A15170589A513354]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Updated Maps' id='Updated Maps_37AB8631CF4F41F1A15170589A513354'>
+            <properties context=''>
+              <relation connection='excel-direct.02mubxf16zk6j31f6w6071pihuht' name='Updated Maps' table='[&apos;Updated Maps$&apos;]' type='table'>
+                <columns gridOrigin='A1:K1472:no:A1:K1472:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Index' ordinal='1' />
+                  <column datatype='integer' name='Timestamp' ordinal='2' />
+                  <column datatype='string' name='Map' ordinal='3' />
+                  <column datatype='string' name='EnemyComposition' ordinal='4' />
+                  <column datatype='integer' name='Duration' ordinal='5' />
+                  <column datatype='string' name='Duration in Minutes' ordinal='6' />
+                  <column datatype='boolean' name='Victory' ordinal='7' />
+                  <column datatype='integer' name='RatingChange' ordinal='8' />
+                  <column datatype='integer' name='MMR' ordinal='9' />
+                  <column datatype='integer' name='EnemyMMR' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='map-counts (updated-analysis)' inline='true' name='federated.0d3rbk20bdjrbc1f31nta012fmfp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='updated-analysis' name='excel-direct.1ms2jxa0y5odvv14734c30c0w9rg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jelia/OneDrive/Desktop/git/WoW-Data-Science/updated-analysis.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1ms2jxa0y5odvv14734c30c0w9rg' name='map-counts' table='[&apos;map-counts$&apos;]' type='table'>
+          <columns gridOrigin='A1:B13:no:A1:B13:0' header='yes' outcome='6'>
+            <column datatype='string' name='map' ordinal='0' />
+            <column datatype='integer' name='map-frequency' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1ms2jxa0y5odvv14734c30c0w9rg' name='map-counts' table='[&apos;map-counts$&apos;]' type='table'>
+          <columns gridOrigin='A1:B13:no:A1:B13:0' header='yes' outcome='6'>
+            <column datatype='string' name='map' ordinal='0' />
+            <column datatype='integer' name='map-frequency' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[map-counts]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B13:no:A1:B13:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>map</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[map]</local-name>
+            <parent-name>[map-counts]</parent-name>
+            <remote-alias>map</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[map-counts_74C912310E7B4680A2C2C83F939E2597]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>map-frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[map-frequency]</local-name>
+            <parent-name>[map-counts]</parent-name>
+            <remote-alias>map-frequency</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[map-counts_74C912310E7B4680A2C2C83F939E2597]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='map-counts' datatype='table' name='[__tableau_internal_object_id__].[map-counts_74C912310E7B4680A2C2C83F939E2597]' role='measure' type='quantitative' />
+      <column caption='Map-Frequency' datatype='integer' name='[map-frequency]' role='measure' type='quantitative' />
+      <column caption='Map' datatype='string' name='[map]' role='dimension' type='nominal' />
+      <column-instance column='[map]' derivation='None' name='[none:map:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:map:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;Ruins of Lordaeron&quot;</bucket>
+            </map>
+            <map to='#26743d'>
+              <bucket>&quot;Mugambala&quot;</bucket>
+            </map>
+            <map to='#2d7f41'>
+              <bucket>&quot;Ashamane&apos;s Fall&quot;</bucket>
+            </map>
+            <map to='#3b8a4a'>
+              <bucket>&quot;Tiger&apos;s Peak&quot;</bucket>
+            </map>
+            <map to='#48954f'>
+              <bucket>&quot;Hook Point&quot;</bucket>
+            </map>
+            <map to='#56a052'>
+              <bucket>&quot;Empyrean Domain&quot;</bucket>
+            </map>
+            <map to='#63ab59'>
+              <bucket>&quot;Robodome&quot;</bucket>
+            </map>
+            <map to='#6fb663'>
+              <bucket>&quot;Blade&apos;s Edge&quot;</bucket>
+            </map>
+            <map to='#7cc26f'>
+              <bucket>&quot;Black Rook Hold&quot;</bucket>
+            </map>
+            <map to='#8ace7b'>
+              <bucket>&quot;Tol&apos;Viron&quot;</bucket>
+            </map>
+            <map to='#9bd78a'>
+              <bucket>&quot;Dalaran Sewers&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;Nagrand&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='map-counts' id='map-counts_74C912310E7B4680A2C2C83F939E2597'>
+            <properties context=''>
+              <relation connection='excel-direct.1ms2jxa0y5odvv14734c30c0w9rg' name='map-counts' table='[&apos;map-counts$&apos;]' type='table'>
+                <columns gridOrigin='A1:B13:no:A1:B13:0' header='yes' outcome='6'>
+                  <column datatype='string' name='map' ordinal='0' />
+                  <column datatype='integer' name='map-frequency' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{47E6015F-9CCB-46F2-84C0-481A2FEB74A5}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='20'>Map Frequency - Season 1 Shadowlands</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='map-counts (updated-analysis)' name='federated.0d3rbk20bdjrbc1f31nta012fmfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d3rbk20bdjrbc1f31nta012fmfp'>
+            <column caption='Map-Frequency' datatype='integer' name='[map-frequency]' role='measure' type='quantitative' />
+            <column caption='Map' datatype='string' name='[map]' role='dimension' type='nominal' />
+            <column-instance column='[map-frequency]' derivation='None' name='[none:map-frequency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[map]' derivation='None' name='[none:map:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <manual-sort column='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Nagrand&quot;</bucket>
+              <bucket>&quot;Dalaran Sewers&quot;</bucket>
+              <bucket>&quot;Tol&apos;Viron&quot;</bucket>
+              <bucket>&quot;Black Rook Hold&quot;</bucket>
+              <bucket>&quot;Blade&apos;s Edge&quot;</bucket>
+              <bucket>&quot;Robodome&quot;</bucket>
+              <bucket>&quot;Empyrean Domain&quot;</bucket>
+              <bucket>&quot;Hook Point&quot;</bucket>
+              <bucket>&quot;Tiger&apos;s Peak&quot;</bucket>
+              <bucket>&quot;Ashamane&apos;s Fall&quot;</bucket>
+              <bucket>&quot;Mugambala&quot;</bucket>
+              <bucket>&quot;Ruins of Lordaeron&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0d3rbk20bdjrbc1f31nta012fmfp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map-frequency:qk]' field-type='quantitative' major-origin='0' major-spacing='30' max='150' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='stroke-size' scope='rows' value='5' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' value='113' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' value='#000000' />
+            <format attr='wrap' data-class='subtotal' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' value='on' />
+            <format attr='wrap' data-class='total' value='on' />
+            <format attr='wrap' data-class='subtotal' value='on' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' value='true' />
+            <format attr='color' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map-frequency:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map-frequency:qk]' value='bold' />
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='color' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' value='bold' />
+            <format attr='wrap' value='auto' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]' />
+              <text column='[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map-frequency:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map-frequency:qk]</rows>
+        <cols>[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]</cols>
+      </table>
+      <simple-id uuid='{8F97A365-DA9E-48A0-916E-DED577331F0D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d7luup1tm2ip618p37c60hmgcca].[none:Map:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{311B0BF7-4733-4C3D-A565-AD38D68968B4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d3rbk20bdjrbc1f31nta012fmfp].[:Measure Names]</field>
+            <field>[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map-frequency:qk]</field>
+            <field>[federated.0d3rbk20bdjrbc1f31nta012fmfp].[none:map:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{15D86E6E-9805-4075-87A4-8EBF03CB247C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      NQmAUDUJgFA1CYBQNQmAUDUJgFA1CYBQNQmAUDUJgFA1CYBQNQmAUDUJgFA1CYBQNQmAUDUJ
+      gFA1CYBQNQmAUDUJgFA1CYBQNQmAUDUJgFA1CYBQNQmAUDUJgFA1CYBQNQmAUDU/5wfQU7mt
+      iiiDm+qPLrN1Qwk11Yfo7B9b2u6EUJifAZijseEiX/vqHmITs3jjzQPsvn8bb1Z/iMViIScn
+      B4Ph5qR5ubmOJWz3N6WlpfH000/7XK7VKreB237vdlKSUrwuy1vpYAKnInX1ev2i62y1Wung
+      kiK1CwoKfNaOiopSpOYn9u7dS3l5uddl2WuyuMCHfo3rXwA0Wtzz00x6DJj0kxj0ejwuFxMT
+      E0xNTXHu3Dn2798PQHqxDXt2ql9lPo3T6Vyo4839f3qPInUBamtPc+Tto16XTbkmcZQqMzng
+      /Pz8ouucXGEGqyKlaW9v91k7KSmJ3fduV6YwUF1dTUNDg9dlO8N3wCr/xvUvALpgioqLaDvz
+      Pqfq29lUUcLrBw8zODzJyMgIWq2W3t5eACYnJ/3r7BZMT08v1PHG41Fuwrih4WGftUdGRgBl
+      AuDxeBZdZyUnDZyYmPBZW6dTblJAgIGBAZ+1x8bGMBHIOcLmpzh2+NDCzddf6/JrGCGWmxwF
+      EqomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCq
+      JgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYB
+      EKp2xwEwRZq5d/s2YsKCl6IfIQLqjgOw4+E9XG7rYM/OrUvRjxABdccBCNbrGBkdJchgXIp+
+      hAioOw7AocPHubdqI0eOHFuKfoQIKD/nCPuV/mvNvHStGQCj0UhwcDBarZbQ0FAADHo9OpSZ
+      PUQfpF+o441OE0SQRq9IbWOw0Wdto9GIXqG6QZqgRdfZEGTApXUpUtugd/usHRoaikFrwKA1
+      LHldvc6AyWTy/fc2BGPQ+TdDjMbj8Xji4+Pp7++/kx4BcDgchIeH3/E4QgTKHW8Bfl1zc/NS
+      DieE4gL6OYDeFM7vPvE4cbYC8rPib/vxGyorWXwDa+Qr3/wmex56AMPCmumprLzF2SINYezZ
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
